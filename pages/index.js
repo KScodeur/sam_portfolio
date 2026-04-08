@@ -5,10 +5,15 @@ import ParticlesContainer from '../components/ParticlesContainer';
 import ProjectsBtn from '../components/ProjectsBtn';
 import Avatar from '../components/Avatar';
 
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import {fadeIn} from '../variants'
 
+// hooks
+import { useLanguage } from '../hooks/useLanguage'
+
 const Home = () => {
+  const { t } = useLanguage();
+
   return(
     <div className="bg-primary/60 h-full">
       {/*Text */}
@@ -16,34 +21,32 @@ const Home = () => {
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left
         h-full container mx-auto">
         {/*title */}
-          <motion.h1 
-            variants={fadeIn('down', 0.2)} 
-            initial="hidden" 
-            animate="show" 
+          <motion.h1
+            variants={fadeIn('down', 0.2)}
+            initial="hidden"
+            animate="show"
             exit="hidden"
             className="h1">
-              Transforming Ideas <br /> Info{' '}
-              <span className="text-accent">Digital Reality</span>
+              {t('home.title1')} <br /> {t('home.title2')}{' '}
+              <span className="text-accent">{t('home.title_accent')}</span>
           </motion.h1>
         {/*subtitle */}
-          <motion.p 
-            variants={fadeIn('down', 0.3)} 
-            initial="hidden" 
-            animate="show" 
+          <motion.p
+            variants={fadeIn('down', 0.3)}
+            initial="hidden"
+            animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-              lorem ipsum dolor sit amaet consectetur adipisicing elit. Itaque
-              nostrun quam reprehenderit vero, tenetur voluptatem nulla aut
-              aspernatur dolores ut.
+              {t('home.subtitle')}
           </motion.p>
           {/*btn */}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn/>
           </div>
-          <motion.div 
-            variants={fadeIn('down', 0.4)} 
-            initial="hidden" 
-            animate="show" 
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial="hidden"
+            animate="show"
             exit="hidden"
             className="hidden xl:flex"
           >
@@ -61,10 +64,10 @@ const Home = () => {
         {/** particles */}
         <ParticlesContainer />
         {/** particles */}
-        <motion.div 
-          variants={fadeIn('up', 0.5)} 
-          initial="hidden" 
-          animate="show" 
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          initial="hidden"
+          animate="show"
           exit="hidden"
           transition={{duration: 1, ease:'easeInOut'}}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32

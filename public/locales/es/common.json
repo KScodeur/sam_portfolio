@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "work": "Proyectos",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title1": "Transformando ideas",
+    "title2": "en",
+    "title_accent": "realidad digital",
+    "subtitle": "Desarrollador web apasionado con más de 2 años de experiencia, creando aplicaciones modernas y de alto rendimiento con Laravel, React y Next.js."
+  },
+  "about": {
+    "title": "Creando experiencias",
+    "title_accent": "web robustas",
+    "title_rest": "con código limpio.",
+    "description": "Hace más de 2 años, comencé mi camino como desarrollador web. Desde entonces, he construido aplicaciones full-stack, trabajado con startups y agencias, y desarrollado una sólida experiencia en Laravel, React y Next.js.",
+    "counter_experience": "Años de experiencia",
+    "counter_clients": "Clientes satisfechos",
+    "counter_projects": "Proyectos terminados",
+    "counter_technologies": "Tecnologías dominadas",
+    "tab_skills": "habilidades",
+    "tab_experience": "experiencia",
+    "tab_credentials": "credenciales",
+    "skills_webdev": "Desarrollo Web",
+    "skills_uiux": "Diseño UI/UX",
+    "exp_1_title": "Desarrollador Full Stack - Freelance",
+    "exp_1_stage": "2022 - Presente",
+    "exp_2_title": "Desarrollador Web Junior - Agencia",
+    "exp_2_stage": "2021 - 2022",
+    "cred_1_title": "Desarrollo Web - Licenciatura",
+    "cred_1_stage": "2021",
+    "cred_2_title": "Informática - Instituto Técnico",
+    "cred_2_stage": "2019"
+  },
+  "services": {
+    "title": "Mis servicios",
+    "subtitle": "Desde el desarrollo back-end con Laravel hasta la creación de interfaces React/Next.js — cubro todo el ciclo de vida de tu proyecto web.",
+    "webdev_title": "Desarrollo Web",
+    "webdev_desc": "Aplicaciones web full-stack construidas con Laravel (PHP) para un back-end sólido y seguro.",
+    "react_title": "Frontend React",
+    "react_desc": "Interfaces de usuario dinámicas y reactivas con React para una experiencia fluida y moderna.",
+    "nextjs_title": "Next.js & SSR",
+    "nextjs_desc": "Aplicaciones Next.js optimizadas con renderizado en el servidor para máximo rendimiento y SEO.",
+    "api_title": "API REST",
+    "api_desc": "Diseño y desarrollo de API RESTful robustas con Laravel para conectar tus servicios.",
+    "optim_title": "Optimización",
+    "optim_desc": "Auditoría y mejora de rendimiento de tus aplicaciones existentes, base de datos incluida."
+  },
+  "work": {
+    "title": "Mis proyectos",
+    "subtitle": "Una selección de proyectos construidos con Laravel, React y Next.js — desde back-ends robustos hasta interfaces modernas."
+  },
+  "testimonials": {
+    "title": "Lo que dicen los clientes",
+    "subtitle": "Comentarios de personas con las que he tenido el placer de trabajar.",
+    "t1_name": "Sophie Martin",
+    "t1_position": "Fundadora de startup",
+    "t1_message": "Un desarrollador serio y reactivo. Entregó nuestra aplicación Laravel a tiempo con código limpio y bien estructurado. ¡Muy recomendado!",
+    "t2_name": "Karim Benali",
+    "t2_position": "Gerente de proyecto",
+    "t2_message": "Excelente trabajo en nuestro rediseño Next.js. El rendimiento se ha multiplicado y el SEO ha mejorado significativamente. Muy profesional.",
+    "t3_name": "Lucas Dupont",
+    "t3_position": "Cofundador",
+    "t3_message": "Transformó nuestra idea en una aplicación web real con una API Laravel y un frontend React impecable. Colaboración excelente de principio a fin."
+  },
+  "contact": {
+    "title": "Trabajemos",
+    "title_accent": "juntos",
+    "subtitle": "¿Tienes un proyecto en mente? Discutámoslo y construyamos algo genial juntos."
+  }
+}

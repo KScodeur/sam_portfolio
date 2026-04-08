@@ -2,6 +2,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+
 // icons
 import {
   RxCrop,
@@ -13,54 +14,60 @@ import {
 } from "react-icons/rx";
 
 import {FreeMode, Pagination} from 'swiper';
-// data
-const serviceData = [
-  {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-];
+
+// hooks
+import { useLanguage } from '../hooks/useLanguage';
 
 const ServiceSlider = () => {
-  return (<Swiper
-    breakpoints={{
-      320:{
-        slidesPerView:1,
-        spaceBetween: 15,
-      },
+  const { t } = useLanguage();
 
-      640:{
-        slidesPerView:3,
-        spaceBetween: 15,
-      }
-    }}
-    freeMode={true}
-    pagination={{
-      clickable:true,
-    }}
-    modules={[FreeMode, Pagination]}
-    className='h-[240px] sm:h-[340px]'
+  const serviceData = [
+    {
+      icon: <RxDesktop />,
+      title: t('services.webdev_title'),
+      description: t('services.webdev_desc'),
+    },
+    {
+      icon: <RxCrop />,
+      title: t('services.react_title'),
+      description: t('services.react_desc'),
+    },
+    {
+      icon: <RxRocket />,
+      title: t('services.nextjs_title'),
+      description: t('services.nextjs_desc'),
+    },
+    {
+      icon: <RxPencil2 />,
+      title: t('services.api_title'),
+      description: t('services.api_desc'),
+    },
+    {
+      icon: <RxReader />,
+      title: t('services.optim_title'),
+      description: t('services.optim_desc'),
+    },
+  ];
+
+  return (
+    <Swiper
+      breakpoints={{
+        320:{
+          slidesPerView:1,
+          spaceBetween: 15,
+        },
+
+        640:{
+          slidesPerView:3,
+          spaceBetween: 15,
+        }
+      }}
+      freeMode={true}
+      pagination={{
+        clickable:true,
+      }}
+      modules={[FreeMode, Pagination]}
+      className='h-[240px] sm:h-[340px]'
     >
       {serviceData.map((item, index)=>{
         return(
@@ -79,12 +86,12 @@ const ServiceSlider = () => {
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300'/>
               </div>
 
-            </div> 
-
+            </div>
           </SwiperSlide>
         )
       })}
-    </Swiper>);
+    </Swiper>
+  );
 };
 
 export default ServiceSlider;
