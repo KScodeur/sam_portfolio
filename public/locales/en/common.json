@@ -38,7 +38,7 @@
   },
   "services": {
     "title": "My services",
-    "subtitle": "From back-end development with Laravel to building React/Next.js interfaces — I cover the full lifecycle of your web project.",
+    "subtitle": "From back-end development with Laravel to building React/Next.js interfaces, I cover the full lifecycle of your web project.",
     "webdev_title": "Web Development",
     "webdev_desc": "Full-stack web applications built with Laravel (PHP) for a solid and secure back-end.",
     "react_title": "React Frontend",
@@ -52,7 +52,7 @@
   },
   "work": {
     "title": "My work",
-    "subtitle": "A selection of projects built with Laravel, React and Next.js — from robust back-ends to modern interfaces."
+    "subtitle": "A selection of projects built with Laravel, React and Next.js, from robust back-ends to modern interfaces."
   },
   "testimonials": {
     "title": "What clients say",
@@ -70,6 +70,11 @@
   "contact": {
     "title": "Let's work",
     "title_accent": "together",
-    "subtitle": "Have a project in mind? Let's discuss it and build something great together."
+    "subtitle": "Have a project in mind? Let's discuss it and build something great together.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message"
   }
 }

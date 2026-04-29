@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 
-import Image from "next/image";
+import { SiLaravel, SiNginx, SiMeilisearch } from 'react-icons/si';
 
 // hooks
 import { useLanguage } from '../hooks/useLanguage';
@@ -16,37 +16,37 @@ const TestimonialSlider = () => {
 
   const testimonialData = [
     {
-      image: '/t-avt-1.png',
+      icon: <SiLaravel />,
       name: t('testimonials.t1_name'),
       position: t('testimonials.t1_position'),
       message: t('testimonials.t1_message'),
     },
     {
-      image: '/t-avt-2.png',
+      icon: <SiNginx />,
       name: t('testimonials.t2_name'),
       position: t('testimonials.t2_position'),
       message: t('testimonials.t2_message'),
     },
     {
-      image: '/t-avt-3.png',
+      icon: <SiMeilisearch />,
       name: t('testimonials.t3_name'),
       position: t('testimonials.t3_position'),
       message: t('testimonials.t3_message'),
     },
     {
-      image: '/t-avt-1.png',
+      icon: <SiLaravel />,
       name: t('testimonials.t4_name'),
       position: t('testimonials.t4_position'),
       message: t('testimonials.t4_message'),
     },
     {
-      image: '/t-avt-2.png',
+      icon: <SiNginx />,
       name: t('testimonials.t5_name'),
       position: t('testimonials.t5_position'),
       message: t('testimonials.t5_message'),
     },
     {
-      image: '/t-avt-3.png',
+      icon: <SiMeilisearch />,
       name: t('testimonials.t6_name'),
       position: t('testimonials.t6_position'),
       message: t('testimonials.t6_message'),
@@ -72,15 +72,9 @@ const TestimonialSlider = () => {
       {testimonialData.map((person, personIndex) => {
         return (
           <SwiperSlide key={personIndex}>
-            <div className="flex flex-col items-center gap-y-4 pb-16">
-              <div className="w-16 h-16 bg-black/50 rounded-full mb-4 overflow-hidden">
-                <Image
-                  src={person.image}
-                  width={64}
-                  height={64}
-                  alt=""
-                  className="object-cover w-full h-full"
-                />
+            <div className="flex flex-col items-start text-left gap-y-4 pb-16">
+              <div className="w-16 h-16 mx-auto bg-black/50 rounded-full mb-4 flex items-center justify-center text-3xl text-accent">
+                {person.icon}
               </div>
               <div className="text-2xl uppercase tracking-[0.06em] font-medium">
                 {person.name}
