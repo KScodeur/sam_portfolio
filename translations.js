@@ -91,7 +91,7 @@ const translations = {
       email: 'Email',
       subject: 'Subject',
       message: 'Message',
-      send: 'Send message',
+      send: 'Send',
       sending: 'Sending...',
       success: 'Message sent successfully!',
       error: 'Error sending message. Please try again.'
